@@ -1,12 +1,15 @@
 import { Provider } from "react-redux"
 import store from "./redux/store"
+import Todo from "./redux/components/Todo";
 
 
 function App() {
 
   return (
     <Provider store={store}>
-      <h1 className="text-5xl">aaa</h1>
+      <Todo>
+        
+      </Todo>
     </Provider>
   )
 }
