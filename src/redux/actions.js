@@ -3,6 +3,7 @@ import {
   FILTER_TODOS,
   MARK_ALL_COMPLETED,
   MARK_COMPLETED_TODO,
+  MARK_INCOMPLETE,
   REMOVE_TODO,
   TOGGLE_TODO,
   UPDATE_SEARCH_TERM,
@@ -24,12 +25,12 @@ export const removeTodo = (id) => ({
 });
 
 export const markCompleted = (id) => ({
-  type: MARK_ALL_COMPLETED,
+  type: MARK_COMPLETED_TODO,
   payload: { id },
 });
 
 export const markIncomplete = (id) => ({
-  type: MARK_COMPLETED_TODO,
+  type: MARK_INCOMPLETE,
   payload: { id },
 });
 
